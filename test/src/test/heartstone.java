@@ -27,12 +27,30 @@ public class heartstone {
 
     public static void main(String[] args) {
 //      
+//a.dely(2000);
+//        a.clk(1830,1050);
+//        a.clk(930,400);
+//        a.dely(90000);
+        int num=0;
         while (true) {
+            num++;
             a.clk(961, 655);
             a.dely(300);
             a.clk(1400, 900);
             a.dely(40000);
             a.clk(1000, 850);
+            if(num%2==1){
+                a.dely(500);
+                a.clk(1830,1050);
+                a.clk(930,400);
+                a.dely(1000);
+                a.clk(930,400);
+                a.dely(3000);
+                a.clk(930,400);
+                a.dely(3000);
+                a.clk(930,400);
+                a.dely(7000);
+            }
             for (int j = 0; j < 4; j++) {
                 for (int i = 0; i < 7; i++) {
                     zhuai(670 + 100 * i, 1000, 960, 200);
